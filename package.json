@@ -24,6 +24,7 @@
   "homepage": "https://github.com/SystemEngineeringTeam/set-web-base#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-csscomb": "^3.0.8",
     "gulp-ejs": "^2.2.1"
   }
 }
