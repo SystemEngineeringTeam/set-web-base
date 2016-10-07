@@ -25,6 +25,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-csscomb": "^3.0.8",
-    "gulp-ejs": "^2.2.1"
+    "gulp-ejs": "^2.2.1",
+    "require-dir": "^0.3.1"
   }
 }
