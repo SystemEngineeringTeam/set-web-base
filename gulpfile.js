@@ -12,6 +12,6 @@ gulp.task('default', function() {
 	console.log("################################");
 	console.log("  Commands ");
 	console.log("  npm install");
-	console.log("  gulp build");
+	console.log("  npm run build");
 	console.log("################################");
 });
