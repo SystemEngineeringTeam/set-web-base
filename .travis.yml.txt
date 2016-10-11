@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - “5.2”
+
+before_script:
+  - npm install
+
+after_success:
+  - run npm dist
