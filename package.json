@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node test_server.js",
     "info": "gulp",
-    "build":"gulp build"
+    "build":"gulp build",
+    "dist":"gulp dist"
   },
   "repository": {
     "type": "git",
