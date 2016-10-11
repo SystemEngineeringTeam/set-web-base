@@ -1,16 +1,20 @@
 language: node_js
 node_js:
-  - 5
-
+- 5
 cache:
   directories:
   - node_modules
-
 before_script:
-  - npm install
-
+- npm install
 script:
-  - npm run info
-
+- npm run info
 after_success:
-  - npm run dist
+- npm run dist
+- bash ./bin/deploy.sh
+env:
+  global:
+    - GIT_COMMITTER_NAME=travis-ci
+    - GIT_COMMITTER_EMAIL=sysken@aitech.ac.jp
+    - GIT_AUTHOR_NAME=travis-ci
+    - GIT_AUTHOR_EMAIL=sysken@aitech.ac.jp
+    - secure: 07WS3wZdu4M7EK3J9OK68anR8UbiayaxitpgZloq1a7dYqj34Mh9tw9Fqgpri5Nk/T6ZPZHl9IX6GBKWLVE0fU0t5z986ERH/iZybYRgdrz/kg/y6nn7tws8uqvPSjNMp/onMLTK2RWMDHwD/o6R16pc6FNovuYiwb4yG1MMeXeaD6P6XpV+of+AWMu3owF/FKikhjR9VM3rZyAE/6KlVDnOLtIfBe0avBuNJniv6bVItO1d2f1o2/6UiHqMF+DZpZRFosWNZn9L74CZgv0jXiZ1wpSPWTIo7NdO7mZ5KwKfRC4nWa4O19Ik+8nNqeEgQvl4cRrLudEFGFsRZobCDCBs123NOJzDBHwbyrv9i2gaM/5sSQ+CdKKLOKb2ULoZgTAD93LHY9HN61szmjHRhNf6ZupiiZQPSoAxW56GtWNgm7w/BoY+g4mDq+ImXUl1h5K1fE3hFzFtAuEr3Hm6809kS/zgsyAKwjReQUx1k2+zkdEeMZj7NDup7TiHN63LA1khNoEPcw7DR3DbATpLXP5lO9eiK2hq/+YOrVUbq/nXTt0KLIJR3H2vMSdLcyQHscxXQrkiEI9A/jwtO1ByY7CAu22ImBRksAJX4dsvOqgBpLihknc+pzvO6OOsr37czXf5dQqqPizxa4Dj68gdeAAdkrpJo12RKNTk7d7840U=
