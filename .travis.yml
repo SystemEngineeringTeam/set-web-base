@@ -9,7 +9,6 @@ before_script:
 script:
 - npm run info
 after_success:
-- npm run dist
 - bash ./bin/deploy.sh
 env:
   global:
