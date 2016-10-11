@@ -5,5 +5,8 @@ node_js:
 before_script:
   - npm install
 
+script:
+  - npm run info
+
 after_success:
-  - run npm dist
+  - npm run dist
