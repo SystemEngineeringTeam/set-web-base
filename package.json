@@ -6,8 +6,8 @@
   "scripts": {
     "test": "node test_server.js",
     "info": "gulp",
-    "build":"gulp build",
-    "dist":"gulp dist"
+    "build": "gulp build",
+    "dist": "gulp dist"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "gulp": "^3.9.1",
     "gulp-csscomb": "^3.0.8",
     "gulp-ejs": "^2.2.1",
+    "gulp-sass": "^2.3.2",
     "require-dir": "^0.3.1",
     "serve-static": "^1.11.1"
   }
