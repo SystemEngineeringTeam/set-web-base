@@ -31,6 +31,14 @@
     right: 0;
 }
 
+.swiper-slide span{
+  position: absolute;
+  top:16px;
+  left:32px;
+  font-size: 28px;
+  z-index: 5;
+}
+
 .swiper-slide img{
   position: absolute;
   top: 0;
@@ -55,3 +63,4 @@
     font-size: 34px;
     opacity: .54;
 }
+
