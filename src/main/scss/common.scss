@@ -1,6 +1,12 @@
+@CHARSET "UTF-8";
+
 .mdl-layout-title a{
   color: #ffffff;
   text-decoration: none;
+}
+
+.mdl-layout__header-row .mdl-navigation__link{
+  opacity: .96 !important;
 }
 
 section.section--center {
