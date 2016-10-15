@@ -1,9 +1,34 @@
 @CHARSET "UTF-8";
 
-.swiper-container {
+
+
+.swiper-height-wrapper {
+    position: relative;
     width: 100%;
-    height: 360px;
     background-color: gray;
+}
+
+.swiper-height-wrapper:before {
+    content:"";
+    display: block;
+    /* 高さの比率 ÷ 幅の比率 × 100 */
+    @media screen and (orientation: landscape) {
+   		/* 横向きの場合のスタイル */
+   		padding-top: 35%; /* 高さを幅の35%に固定 */
+    }
+    @media screen and (orientation: portrait) {
+   		/* 縦向きの場合のスタイル */
+   		padding-top: 75%; /* 高さを幅の75%に固定 */
+    }
+    
+}
+
+.swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .blog-section {
