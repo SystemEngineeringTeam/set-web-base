@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%- include('./common/_head'); %>
+<%- include('./common/_head', {root:'./'}); %>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
 <link rel="stylesheet" href="./css/index.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
@@ -12,8 +12,8 @@
 </head>
 <body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <%- include('./common/_header'); %>
-    <%- include('./common/_drawer'); %>
+    <%- include('./common/_header', {root:'./'}); %>
+    <%- include('./common/_drawer', {root:'./'}); %>
     <main class="mdl-layout__content"> 
     
     <!-- Swiper -->
@@ -23,7 +23,12 @@
       <div class="blog-section-title">ブログ</div>
       <div id="blog-section-feed" class="mdl-grid"></div>
     </div>
-    <%- include('./common/_footer'); %>
+    
+    <div class="calendar-section">
+      <div class="calendar-section-title">予定表</div>
+    </div>
+    
+    <%- include('./common/_footer', {root:'./'}); %>
     </main>
   </div>
 
