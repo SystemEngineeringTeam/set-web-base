@@ -1,1 +1,49 @@
-@CHARSET "UTF-8";
+@charset 'UTF-8';
+@CHARSET 'UTF-8';
+.swiper-height-wrapper {
+  position : relative;
+  width : 100%;
+  background-color : gray;
+}
+
+.swiper-height-wrapper:before {
+  content : '';
+  display : block;
+  /* 高さの比率 ÷ 幅の比率 × 100 */
+}
+@media screen and (orientation: landscape) {
+  .swiper-height-wrapper:before {
+    /* 横向きの場合のスタイル */
+    padding-top : 35%;
+    /* 高さを幅の35%に固定 */
+  }
+}
+@media screen and (orientation: portrait) {
+  .swiper-height-wrapper:before {
+    /* 縦向きの場合のスタイル */
+    padding-top : 75%;
+    /* 高さを幅の75%に固定 */
+  }
+}
+
+.swiper-container {
+  position : absolute;
+  top : 0;
+  left : 0;
+  bottom : 0;
+  right : 0;
+}
+
+.blog-section {
+  padding : 80px 0;
+  max-width : 1044px;
+  margin-left : auto;
+  margin-right : auto;
+}
+
+.blog-section .blog-section-title {
+  margin-left : 12px;
+  padding-bottom : 24px;
+  font-size : 34px;
+  opacity : 0.54;
+}
