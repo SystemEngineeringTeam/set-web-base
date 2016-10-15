@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<%- include('../common/_head', {root:'../'}); %>
+<title>愛知工業大学 システム工学研究会-About-</title>
+<link rel="stylesheet" href="../css/about.css">
+</head>
+<body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <%- include('../common/_header', {root:'../'}); %>
+    <%- include('../common/_drawer', {root:'../'}); %>
+    <main class="mdl-layout__content">
+
+    <div class="mdl-grid about-max-width">
+
+      <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">About</h2>
+        </div>
+        <div class="mdl-card__media">
+          <img class="about-image" src="../images/about/about.jpg"
+            border="0" alt="">
+        </div>
+
+        <div class="mdl-grid portfolio-copy">
+          <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">ようこそ</h3>
+          <div
+            class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+            <p>愛知工業大学公認サークル システム工学研究会のWebサイトにようこそ.<br>
+            --紹介文--
+            
+            </p>
+          </div>
+          <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">
+            活動
+          </h3>
+
+          <div
+            class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+            <p>いろいろやってるよ！<br>
+            --いろいろ書く--</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <%- include('../common/_footer', {root:'../'}); %>
+    </main>
+  </div>
+
+</body>
+</html>
