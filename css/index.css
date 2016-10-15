@@ -3,7 +3,7 @@
 .swiper-height-wrapper {
   position : relative;
   width : 100%;
-  background-color : gray;
+  background-color : #eeeeee;
 }
 
 .swiper-height-wrapper:before {
@@ -32,6 +32,25 @@
   left : 0;
   bottom : 0;
   right : 0;
+}
+
+.swiper-slide span {
+  position : absolute;
+  top : 16px;
+  left : 32px;
+  font-size : 28px;
+  z-index : 5;
+}
+
+.swiper-slide img {
+  position : absolute;
+  top : 0;
+  bottom : 0;
+  left : 0;
+  right : 0;
+  margin : auto;
+  max-width : 100%;
+  max-height : 100%;
 }
 
 .blog-section {

@@ -1,0 +1,17 @@
+@CHARSET 'UTF-8';
+.mdl-layout-title a {
+  color : #ffffff;
+  text-decoration : none;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+  opacity : 0.96 !important;
+}
+
+section.section--center {
+  max-width : 620px;
+}
+
+section {
+  margin-bottom : 72px !important;
+}
