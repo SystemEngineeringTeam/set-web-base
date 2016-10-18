@@ -7,3 +7,7 @@
 .mdl-card__media img {
   width : 100%;
 }
+
+.sub-active {
+  margin : 4px;
+}
