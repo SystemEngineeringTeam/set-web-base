@@ -33,7 +33,13 @@
     "gulp-ejs": "^2.2.1",
     "gulp-prettify": "^0.5.0",
     "gulp-sass": "^2.3.2",
+    "gulp-typescript": "^3.0.2",
     "require-dir": "^0.3.1",
-    "serve-static": "^1.11.1"
+    "serve-static": "^1.11.1",
+    "typescript": "^2.0.3"
+  },
+  "dependencies": {
+    "@types/gapi": "0.0.29",
+    "@types/google.feeds": "0.0.28"
   }
 }
