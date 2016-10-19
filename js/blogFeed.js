@@ -1,7 +1,7 @@
 google.load("feeds", "1");  
 google.setOnLoadCallback(function() {  
 
-    var feed = new google.feeds.Feed("http://set1.ie.aitech.ac.jp/?feed=rss2");
+    var feed = new google.feeds.Feed("http://set1.ie.aitech.ac.jp/blog/?feed=rss2");
     feed.load(function (result){
         
     var template = document.getElementById("blogFeedTemplate");
