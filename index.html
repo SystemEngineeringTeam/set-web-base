@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="SystemEngineeringTeam" content="HTMQ">
     <link rel="shortcut icon" href="images/set_icon.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-indigo.min.css" />
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <link rel="stylesheet" href="./css/common.css">
+    <meta name="description" content="愛知工業大学公認サークル システム工学研究会のオフィシャルサイトです。">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
@@ -17,7 +19,7 @@
     <title>愛知工業大学 システム工学研究会</title>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
       <header class="mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <!-- Title -->
@@ -72,7 +74,7 @@
           <div class="section-title blog-section-title">ブログ</div>
           <div id="blog-section-feed" class="mdl-grid">
             <template id="blogFeedTemplate">
-              <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+              <article class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                 <div class="mdl-card__media">
                   <img class="blog-image" src="./images/index/no.jpg" border="0" alt=""> </div>
                 <div class="mdl-card__title">
@@ -86,7 +88,7 @@
                     </span>
                   </a>
                 </div>
-              </div>
+              </article>
             </template>
           </div>
         </div>
