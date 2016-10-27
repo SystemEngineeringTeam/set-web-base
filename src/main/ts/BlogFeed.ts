@@ -17,6 +17,7 @@ google.load("feeds", "1");
 google.setOnLoadCallback(function() {  
 
     var feed = new google.feeds.Feed("http://set1.ie.aitech.ac.jp/blog/?feed=rss2");
+    feed.setNumEntries(6);
     feed.load(function (result){
         
     var template : HTMLTemplateElement = <HTMLTemplateElement>document.getElementById("blogFeedTemplate");
