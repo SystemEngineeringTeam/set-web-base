@@ -20,6 +20,9 @@ google.setOnLoadCallback(function() {
     feed.setNumEntries(6);
     feed.load(function (result){
         
+        document.getElementById("blog-progress").style.display = 'none';
+        
+        
     var template : HTMLTemplateElement = <HTMLTemplateElement>document.getElementById("blogFeedTemplate");
     
     var container = document.getElementById("blog-section-feed");
