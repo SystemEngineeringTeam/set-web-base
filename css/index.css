@@ -71,3 +71,7 @@
   width : 100%;
   height : 180px;
 }
+
+.calendar-container {
+  margin : 0px 8px;
+}

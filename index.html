@@ -7,8 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-indigo.min.css" />
-    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js" async></script>
     <link rel="stylesheet" href="./css/common.css">
+    <script>
+      (function(i, s, o, g, r, a, m)
+      {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function()
+        {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-75514827-1', 'auto');
+      ga('send', 'pageview');
+    </script>
     <meta name="description" content="愛知工業大学公認サークル システム工学研究会のオフィシャルサイトです。">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -73,6 +90,7 @@
         <div class="section-container blog-section">
           <div class="section-title blog-section-title">ブログ</div>
           <div id="blog-section-feed" class="mdl-grid">
+            <div id="blog-progress" class="mdl-spinner mdl-js-spinner is-active"></div>
             <template id="blogFeedTemplate">
               <article class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                 <div class="mdl-card__media">
@@ -94,6 +112,12 @@
         </div>
         <div class="section-container calendar-section">
           <div class="section-title calendar-section-title">予定表</div>
+          <div class="calendar-wrapper">
+            <div class="calendar-container">
+              <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=620&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ait.sysken%40gmail.com&amp;color=%238C500B&amp;src=r61hdqfjoujklgp5g8rlbdbt9g%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Asia%2FTokyo"
+                style="border-width:0" width="800" height="640" frameborder="0" scrolling="no"></iframe>
+            </div>
+          </div>
         </div>
         <footer id="footer" class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">

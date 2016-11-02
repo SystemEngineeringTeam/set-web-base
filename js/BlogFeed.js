@@ -4,6 +4,7 @@ google.setOnLoadCallback(function () {
     var feed = new google.feeds.Feed("http://set1.ie.aitech.ac.jp/blog/?feed=rss2");
     feed.setNumEntries(6);
     feed.load(function (result) {
+        document.getElementById("blog-progress").style.display = 'none';
         var template = document.getElementById("blogFeedTemplate");
         var container = document.getElementById("blog-section-feed");
         if (!result.error) {
