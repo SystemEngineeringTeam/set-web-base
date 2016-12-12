@@ -14,6 +14,7 @@ google.setOnLoadCallback(function () {
                 var tile_e = card.querySelector('.mdl-card__title-text');
                 var tile_text = card.querySelector('.mdl-card__supporting-text');
                 var card_link = card.querySelector('.mdl-card__actions a');
+                var card_img = card.querySelector('.blog-image');
                 var entry = result.feed.entries[i];
                 var title = entry.title;
                 tile_e.textContent = title;
@@ -25,6 +26,11 @@ google.setOnLoadCallback(function () {
                 var publishedDate = entry.publishedDate;
                 for (var j = 0; j < entry.categories.length; j++) {
                     var categorie = entry.categories[j];
+                }
+                //画像の設定
+                var imgCheck = entry.content.match(/(src="http:){1}[\S_-]+((\.png)|(\.jpg)|(\.JPG))/);
+                if (imgCheck) {
+                    card_img.src = imgCheck[0].substr(5);
                 }
                 template.parentNode.appendChild(card);
                 console.log(title);
